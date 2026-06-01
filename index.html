@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marisa Perini — Psicóloga Clínica | Atendimento 60+ em Caxias do Sul</title>
+  <meta name="description" content="Psicóloga clínica especializada em envelhecimento humano. Atendimento presencial em Caxias do Sul, online e a domicílio para pessoas 60+. CRP 07/37863.">
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="src/css/main.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════ -->
+  <nav class="navbar" role="navigation" aria-label="Menu principal">
+    <div class="navbar__inner">
+      <a href="#" class="navbar__logo">
+        <img src="src/assets/logo.png" alt="Marisa Perini — Psicóloga Clínica" class="navbar__logo-img">
+      </a>
+
+      <ul class="navbar__nav" role="list">
+        <li><a href="#sobre" class="navbar__link">Sobre</a></li>
+        <li><a href="#atendimento" class="navbar__link">Atendimento</a></li>
+        <li><a href="#para-quem" class="navbar__link">Para Quem</a></li>
+        <li><a href="#faq" class="navbar__link">Perguntas Frequentes</a></li>
+      </ul>
+
+      <a href="https://wa.me/5454999494087" class="btn btn-primary navbar__cta" target="_blank" rel="noopener noreferrer" aria-label="Agendar conversa pelo WhatsApp">
+        Agendar Conversa
+      </a>
+
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════
+         HERO
+    ══════════════════════════════════════════ -->
+    <section class="hero" aria-labelledby="hero-headline">
+      <canvas id="hero-wave-canvas" aria-hidden="true"></canvas>
+      <div class="container">
+
+        <div class="hero__label reveal">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M7 1C7 1 5 4 2 5C5 6 7 9 7 9C7 9 9 6 12 5C9 4 7 1 7 1Z" fill="#5FA573"/>
+          </svg>
+          Psicóloga CRP 07/37863 · Especialista em Envelhecimento Humano
+        </div>
+
+        <h1 id="hero-headline" class="hero__headline reveal reveal-delay-1">
+          Terapia que entende o tempo de quem viveu <span class="accent">muito.</span>
+        </h1>
+
+        <p class="hero__subtitle reveal reveal-delay-2">
+          Acompanhamento psicológico em Terapia Cognitivo-Comportamental para pessoas 60+, com escuta paciente, presença real e a possibilidade de sessões na clínica, online ou no conforto da sua casa.
+        </p>
+
+        <div class="hero__ctas reveal reveal-delay-3">
+          <a href="https://wa.me/5454999494087" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            Agendar uma conversa
+          </a>
+          <a href="#atendimento" class="btn btn-outline">
+            Conhecer o atendimento
+          </a>
+        </div>
+
+        <p class="hero__badge reveal reveal-delay-4">
+          Psicóloga CRP 07/37863 · Pós-graduada em Envelhecimento Humano
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════
+         DIFERENCIAIS — Como posso te apoiar
+    ══════════════════════════════════════════ -->
+    <section class="section-diferenciais" id="sobre" aria-labelledby="diferenciais-headline">
+      <div class="container">
+
+        <div class="section-diferenciais__header reveal">
+          <h2 id="diferenciais-headline">Acolhimento que entende o agora</h2>
+          <p class="section-diferenciais__subtitle">
+            Cada encontro foi pensado para respeitar seu ritmo, sua autonomia e a fase da vida em que você está.
+          </p>
+        </div>
+
+        <div class="diferenciais-accordion reveal">
+
+          <div class="faq-item">
+            <button class="faq-item__btn" aria-expanded="false">
+              <span>Especialização real em envelhecimento</span>
+              <span class="faq-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </span>
+            </button>
+            <div class="faq-item__answer">
+              <p>Pós-graduada em Envelhecimento Humano. O atendimento é técnico, atualizado e construído para as questões específicas dos 60+. Não é "terapia comum adaptada".</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__btn" aria-expanded="false">
+              <span>Terapia Cognitivo-Comportamental</span>
+              <span class="faq-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </span>
+            </button>
+            <div class="faq-item__answer">
+              <p>Abordagem com eficácia comprovada para ansiedade, depressão e mudanças de fase da vida. Trabalhamos com objetivos claros e ferramentas para o seu dia a dia.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__btn" aria-expanded="false">
+              <span>Atendimento a domicílio</span>
+              <span class="faq-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </span>
+            </button>
+            <div class="faq-item__answer">
+              <p>Se sair de casa hoje é difícil, por mobilidade, logística ou insegurança, eu posso ir até você em Caxias do Sul. O cuidado não pode esperar.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__btn" aria-expanded="false">
+              <span>Escuta sem pressa</span>
+              <span class="faq-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </span>
+            </button>
+            <div class="faq-item__answer">
+              <p>Cada sessão respeita o tempo que você precisa para colocar as coisas em ordem. Aqui nenhum sentimento é "frescura" ou "coisa da idade".</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="section-diferenciais__cta reveal">
+          <a href="#atendimento" class="btn btn-primary">Saber mais sobre o atendimento</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         HERO SECUNDÁRIO — Convite à 1ª sessão
+    ══════════════════════════════════════════ -->
+    <section class="hero-secondary" id="para-quem" aria-labelledby="hero2-headline">
+
+      <!-- Shadow overlay animation -->
+      <div class="hero-secondary__anim" aria-hidden="true">
+        <svg style="position:absolute;width:0;height:0">
+          <defs>
+            <filter id="shadow-overlay-filter" x="-20%" y="-20%" width="140%" height="140%">
+              <feTurbulence result="undulation" numOctaves="2" baseFrequency="0.0025,0.010" seed="0" type="turbulence"/>
+              <feColorMatrix id="shadow-overlay-hue" in="undulation" type="hueRotate" values="180"/>
+              <feColorMatrix in="dist" result="circulation" type="matrix" values="4 0 0 0 1  4 0 0 0 1  4 0 0 0 1  1 0 0 0 0"/>
+              <feDisplacementMap in="SourceGraphic" in2="circulation" scale="50" result="dist"/>
+              <feDisplacementMap in="dist" in2="undulation" scale="50" result="output"/>
+            </filter>
+          </defs>
+        </svg>
+        <div class="hero-secondary__anim-inner">
+          <div class="hero-secondary__anim-blob"></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="hero-secondary__grid">
+
+          <h2 id="hero2-headline" class="hero-secondary__headline reveal">
+            A primeira conversa é o passo mais difícil.<br>E é só uma conversa.
+          </h2>
+
+          <div class="hero-secondary__photo reveal reveal-delay-1">
+            <img src="src/assets/mariana-foto.jpeg" alt="Mariana Perine — Psicóloga" />
+          </div>
+
+          <p class="hero-secondary__sub reveal reveal-delay-1">
+            Conhecer a profissional, sentir se faz sentido, entender como funciona. Sem compromisso de continuar. Só um espaço para você decidir com tranquilidade.
+          </p>
+
+          <div class="hero-secondary__ctas reveal reveal-delay-2">
+            <a href="https://wa.me/5454999494087" class="btn btn-outline-light" target="_blank" rel="noopener noreferrer">
+              Falar pelo WhatsApp
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════
+         NÚMEROS
+    ══════════════════════════════════════════ -->
+    <section class="section-numeros" aria-label="Estatísticas">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item reveal">
+            <div class="stat-item__value">6+</div>
+            <p class="stat-item__label">anos de prática clínica</p>
+          </div>
+          <div class="stat-item reveal reveal-delay-1">
+            <div class="stat-item__value">200+</div>
+            <p class="stat-item__label">atendimentos realizados</p>
+          </div>
+          <div class="stat-item reveal reveal-delay-2">
+            <div class="stat-item__value">3</div>
+            <p class="stat-item__label">modalidades disponíveis</p>
+          </div>
+          <div class="stat-item reveal reveal-delay-3">
+            <div class="stat-item__value">60+</div>
+            <p class="stat-item__label">público com formação específica</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         MODALIDADES DE ATENDIMENTO
+    ══════════════════════════════════════════ -->
+    <section class="section-modalidades" id="atendimento" aria-labelledby="modal-headline">
+      <div class="container">
+
+        <div class="section-modalidades__header reveal">
+          <h2 id="modal-headline">Três formas de cuidar. Você escolhe a que cabe na sua rotina.</h2>
+          <p class="section-modalidades__subtitle">
+            Cada modalidade mantém a mesma qualidade de escuta. A escolha é sobre o que faz sentido pra você agora.
+          </p>
+        </div>
+
+        <div class="modalidades-grid">
+
+          <article class="modalidade-card reveal">
+            <div class="modalidade-card__img" style="background: linear-gradient(135deg,#BDCDC1,#E1E7E3)" role="img" aria-label="Atendimento presencial"></div>
+            <div class="modalidade-card__body">
+              <h3 class="modalidade-card__title">Atendimento Presencial</h3>
+              <p class="modalidade-card__desc">Consultório no Centro de Caxias do Sul, ao lado da Praça Dante. Ambiente acolhedor, pensado para o conforto e a segurança de quem chega.</p>
+              <p class="modalidade-card__tag">Disponível para todas as idades</p>
+            </div>
+            <div class="modalidade-card__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><polyline points="9,6 15,12 9,18"/></svg>
+            </div>
+          </article>
+
+          <article class="modalidade-card reveal reveal-delay-1">
+            <div class="modalidade-card__img" role="img" aria-label="Atendimento online">
+              <img src="src/assets/atendimento-online.jpeg" alt="Atendimento online por vídeo" />
+            </div>
+            <div class="modalidade-card__body">
+              <h3 class="modalidade-card__title">Atendimento Online</h3>
+              <p class="modalidade-card__desc">Sessões por vídeo, com a mesma profundidade da terapia presencial. Ideal para quem mora em outra cidade ou prefere o conforto da própria casa.</p>
+              <p class="modalidade-card__tag">Disponível para todas as idades</p>
+            </div>
+            <div class="modalidade-card__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><polyline points="9,6 15,12 9,18"/></svg>
+            </div>
+          </article>
+
+          <article class="modalidade-card reveal reveal-delay-2">
+            <div class="modalidade-card__img" role="img" aria-label="Atendimento a domicílio">
+              <img src="src/assets/maos-cuidado.jpeg" alt="Mãos se tocando em gesto de cuidado" />
+            </div>
+            <div class="modalidade-card__body">
+              <h3 class="modalidade-card__title">Atendimento a Domicílio</h3>
+              <p class="modalidade-card__desc">Vou até você, em Caxias do Sul. Para quem tem dificuldade de mobilidade, mora longe do centro ou prefere a sessão no próprio espaço.</p>
+              <p class="modalidade-card__tag">Exclusivo para pessoas 60+</p>
+            </div>
+            <div class="modalidade-card__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><polyline points="9,6 15,12 9,18"/></svg>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         PROCESSO — Bento grid
+    ══════════════════════════════════════════ -->
+    <section class="section-processo" aria-labelledby="processo-headline">
+      <div class="container">
+
+        <div class="section-processo__header reveal">
+          <h2 id="processo-headline">O caminho até o primeiro encontro</h2>
+          <p style="color:var(--color-text-muted); margin-top:16px; max-width:480px">
+            Sem burocracia, sem questionário interminável. Só os passos necessários para começar bem.
+          </p>
+        </div>
+
+        <div class="bento-grid">
+
+          <div class="bento-card bento-card--large reveal">
+            <div class="bento-card__number">01</div>
+            <h3>Conversa inicial pelo WhatsApp</h3>
+            <p>Você me envia uma mensagem. Eu respondo pessoalmente, tiramos as primeiras dúvidas e marcamos a primeira sessão no dia e horário que funciona para você.</p>
+          </div>
+
+          <div class="bento-card bento-card--dark reveal reveal-delay-1">
+            <div class="bento-card__number">02</div>
+            <h3>Escolha da modalidade</h3>
+            <p>Você decide: clínica, online ou domicílio. Sem custo de deslocamento adicional para domicílio dentro de Caxias do Sul.</p>
+          </div>
+
+          <div class="bento-card reveal">
+            <div class="bento-card__number">03</div>
+            <h3>Primeira sessão</h3>
+            <p>Um encontro de escuta. Você fala o que quiser, sem roteiro. Juntos vemos se faz sentido seguir.</p>
+          </div>
+
+          <div class="bento-card bento-card--large bento-card--dark reveal reveal-delay-1">
+            <div class="bento-card__number">04</div>
+            <h3>Acompanhamento contínuo</h3>
+            <p>A partir da segunda sessão, montamos um plano de trabalho com objetivos claros e ferramentas concretas da TCC para o seu dia a dia. Não fica só na conversa.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         FAQ
+    ══════════════════════════════════════════ -->
+    <section class="section-faq" id="faq" aria-labelledby="faq-headline">
+      <div class="container">
+        <div class="section-faq__inner">
+
+          <div>
+            <h2 id="faq-headline" class="reveal">As dúvidas que mais escuto antes da primeira sessão</h2>
+            <div class="section-faq__photos" aria-hidden="true">
+              <div class="faq-photo" style="background: linear-gradient(135deg,#BDCDC1,#E1E7E3)"></div>
+              <div class="faq-photo" style="background: linear-gradient(135deg,#5FA573,#467B55); margin-top:20px"></div>
+            </div>
+          </div>
+
+          <div class="faq-list" role="list">
+
+            <div class="faq-item" role="listitem">
+              <button class="faq-item__btn" aria-expanded="false">
+                <span>Terapia funciona pra quem já passou dos 60?</span>
+                <span class="faq-item__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+              </button>
+              <div class="faq-item__answer">
+                <p>Funciona, e há literatura científica robusta provando isso. A TCC é especialmente eficaz porque trabalha com objetivos concretos, não só com "falar sobre o passado". O que muda é a abordagem: o foco passa a ser sentido, presença, qualidade das relações e adaptação às mudanças da fase.</p>
+              </div>
+            </div>
+
+            <div class="faq-item" role="listitem">
+              <button class="faq-item__btn" aria-expanded="false">
+                <span>Como funciona o atendimento a domicílio?</span>
+                <span class="faq-item__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+              </button>
+              <div class="faq-item__answer">
+                <p>Eu vou até a sua casa em Caxias do Sul, na data e horário combinados. O atendimento dura o mesmo tempo da sessão na clínica (50 minutos) e mantém o mesmo sigilo. Só precisamos de um cômodo onde possamos conversar com privacidade.</p>
+              </div>
+            </div>
+
+            <div class="faq-item" role="listitem">
+              <button class="faq-item__btn" aria-expanded="false">
+                <span>Preciso ter algum "problema grave" para começar?</span>
+                <span class="faq-item__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+              </button>
+              <div class="faq-item__answer">
+                <p>Não. Muita gente procura terapia por sentir que algo "não está fluindo": ansiedade, dificuldade com mudanças, luto, distanciamento da família, perda de propósito. Tudo isso é motivo válido. Não precisa esperar piorar.</p>
+              </div>
+            </div>
+
+            <div class="faq-item" role="listitem">
+              <button class="faq-item__btn" aria-expanded="false">
+                <span>A sessão online é tão boa quanto a presencial?</span>
+                <span class="faq-item__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+              </button>
+              <div class="faq-item__answer">
+                <p>Sim, quando bem conduzida. A pesquisa mostra resultados equivalentes para a maioria das queixas. O essencial é ter um lugar tranquilo, fones de ouvido e uma conexão estável. Se tiver dificuldade técnica, a gente resolve junto na primeira tentativa.</p>
+              </div>
+            </div>
+
+            <div class="faq-item" role="listitem">
+              <button class="faq-item__btn" aria-expanded="false">
+                <span>Você atende plano de saúde?</span>
+                <span class="faq-item__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+              </button>
+              <div class="faq-item__answer">
+                <p>O atendimento é particular. Forneço recibo para reembolso de planos que oferecem essa cobertura ou para abatimento no Imposto de Renda como despesa médica.</p>
+              </div>
+            </div>
+
+            <div class="faq-item" role="listitem">
+              <button class="faq-item__btn" aria-expanded="false">
+                <span>Quanto tempo leva pra eu sentir resultado?</span>
+                <span class="faq-item__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </span>
+              </button>
+              <div class="faq-item__answer">
+                <p>A maioria das pessoas nota mudanças nas primeiras 6 a 10 sessões: padrões de pensamento, ferramentas para lidar com a ansiedade, qualidade do sono. Mas cada pessoa tem um tempo. O importante é que cada sessão entregue algo concreto.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         GALERIA
+    ══════════════════════════════════════════ -->
+    <section class="section-galeria" aria-labelledby="galeria-headline">
+      <div class="container">
+
+        <div class="section-galeria__header reveal">
+          <h2 id="galeria-headline">Conheça o espaço</h2>
+          <p style="color:var(--color-text-muted); margin-top:16px; max-width:500px; margin-left:auto; margin-right:auto">
+            Consultório no Centro de Caxias do Sul, atendimentos online de qualquer lugar e visitas a domicílio com a mesma escuta cuidadosa.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item" role="img" aria-label="Foto do consultório 1" style="background:linear-gradient(135deg,#E1E7E3,#BDCDC1)"></div>
+          <div class="gallery-item" role="img" aria-label="Foto do consultório 2" style="background:linear-gradient(135deg,#5FA573,#E1E7E3)"></div>
+          <div class="gallery-item" role="img" aria-label="Foto do consultório 3" style="background:linear-gradient(135deg,#467B55,#5A5143)"></div>
+          <div class="gallery-item" role="img" aria-label="Foto do consultório 4" style="background:linear-gradient(135deg,#BDCDC1,#FDF7EF)"></div>
+          <div class="gallery-item" role="img" aria-label="Foto do consultório 5" style="background:linear-gradient(135deg,#5A5143,#386A46)"></div>
+          <div class="gallery-item" role="img" aria-label="Foto do consultório 6" style="background:linear-gradient(135deg,#5FA573,#467B55)"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         MANIFESTO
+    ══════════════════════════════════════════ -->
+    <section class="section-manifesto" aria-label="Manifesto">
+      <div class="container">
+
+        <div class="section-manifesto__icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none">
+            <path d="M16 4C16 4 12 10 6 12C12 14 16 20 16 20C16 20 20 14 26 12C20 10 16 4 16 4Z" fill="#5FA573"/>
+          </svg>
+        </div>
+
+        <p class="reveal">
+          Acredito que envelhecer é continuar virando-se gente. Que ansiedade, luto e mudança não têm idade certa para acontecer, nem idade certa para serem cuidados. E que cada pessoa, em qualquer fase da vida, merece um espaço onde sua história é levada a sério.
+        </p>
+
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer__top">
+
+        <div class="footer__brand">
+          <p class="brand-name">Marisa Perini</p>
+          <p class="crp">CRP 07/37863 · Psicóloga Clínica<br>Terapia Cognitivo-Comportamental</p>
+          <p class="tagline">Atendimento 60+, adultos e adolescentes.<br>Presencial, online e domicílio em Caxias do Sul.</p>
+        </div>
+
+        <div class="footer__col">
+          <p class="footer__col-title">Contato</p>
+          <a href="https://wa.me/5454999494087" target="_blank" rel="noopener noreferrer">(54) 9XXXX-XXXX</a>
+          <a href="mailto:contato@marisaperini.com.br">contato@marisaperini.com.br</a>
+        </div>
+
+        <div class="footer__col">
+          <p class="footer__col-title">Consultório</p>
+          <p>Centro de Caxias do Sul, RS</p>
+          <p>Ao lado da Praça Dante</p>
+          <p style="margin-top:12px; font-size:13px; opacity:0.6">Endereço completo a confirmar</p>
+        </div>
+
+        <div class="footer__col">
+          <p class="footer__col-title">Horários</p>
+          <p>Segunda a sexta · 8h–19h</p>
+          <p>Sábado · 8h–12h</p>
+          <p style="margin-top:16px">
+            <a href="https://instagram.com/psi.marisaperini" target="_blank" rel="noopener noreferrer">@psi.marisaperini</a>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 Marisa Perini — Todos os direitos reservados · CRP 07/37863</p>
+
+        <div class="footer__social">
+          <a href="https://www.instagram.com/psi.marisaperini?igsh=MWxtZ2h0MWlsb2JhZQ==" target="_blank" rel="noopener noreferrer" aria-label="Instagram @psi.marisaperini">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" stroke="none">
+              <defs>
+                <radialGradient id="ig-grad" cx="30%" cy="107%" r="150%">
+                  <stop offset="0%" stop-color="#fdf497"/>
+                  <stop offset="10%" stop-color="#fdf497"/>
+                  <stop offset="50%" stop-color="#fd5949"/>
+                  <stop offset="68%" stop-color="#d6249f"/>
+                  <stop offset="100%" stop-color="#285AEB"/>
+                </radialGradient>
+              </defs>
+              <rect x="2" y="2" width="20" height="20" rx="5.5" fill="url(#ig-grad)"/>
+              <circle cx="12" cy="12" r="4.2" fill="none" stroke="white" stroke-width="1.8"/>
+              <circle cx="17.2" cy="6.8" r="1.1" fill="white"/>
+            </svg>
+          </a>
+          <a href="https://wa.me/5454999494087" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="10" fill="#25D366"/>
+              <path fill="white" d="M17.47 14.38c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.41.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47-.16-.01-.34-.01-.52-.01-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29s.98 2.65 1.12 2.84c.14.18 1.93 2.95 4.68 4.13.65.28 1.16.45 1.56.57.65.21 1.25.18 1.72.11.52-.08 1.6-.65 1.83-1.28.23-.63.23-1.17.16-1.28-.07-.11-.25-.18-.52-.32z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- WhatsApp flutuante -->
+  <a href="https://wa.me/5454999494087" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Falar pelo WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true" fill="none">
+      <path fill="white" d="M16 3C8.82 3 3 8.82 3 16c0 2.3.6 4.46 1.65 6.33L3 29l6.84-1.62A13 13 0 0 0 16 29c7.18 0 13-5.82 13-13S23.18 3 16 3zm0 23.8a10.78 10.78 0 0 1-5.5-1.51l-.39-.23-4.06.96.99-3.95-.26-.41A10.8 10.8 0 1 1 16 26.8zm5.93-8.08c-.32-.16-1.91-.94-2.2-1.05-.3-.11-.51-.16-.73.16-.22.33-.84 1.05-1.03 1.27-.19.22-.38.24-.7.08-.32-.16-1.36-.5-2.59-1.6-.96-.85-1.6-1.9-1.79-2.22-.19-.32-.02-.49.14-.65.15-.14.32-.38.48-.57.16-.19.22-.32.32-.54.11-.22.05-.41-.02-.57-.08-.16-.73-1.76-1-2.41-.26-.63-.53-.55-.73-.56-.19-.01-.41-.01-.62-.01-.22 0-.57.08-.87.41-.3.32-1.15 1.12-1.15 2.74s1.18 3.18 1.34 3.4c.16.22 2.32 3.54 5.62 4.97.79.34 1.4.54 1.88.69.79.25 1.5.21 2.07.13.63-.09 1.91-.78 2.18-1.53.27-.75.27-1.4.19-1.53-.08-.13-.3-.21-.62-.37z"/>
+    </svg>
+  </a>
+
+  <!-- JS -->
+  <script src="src/js/wave-shader.js" defer></script>
+  <script src="src/js/main.js" defer></script>
+  <script>
+    (function() {
+      const hueEl = document.getElementById('shadow-overlay-hue');
+      if (!hueEl) return;
+      const cycleDuration = 10000; // 10s por volta completa
+      const start = performance.now();
+      function tick(now) {
+        const elapsed = (now - start) % cycleDuration;
+        const hue = (elapsed / cycleDuration) * 360;
+        hueEl.setAttribute('values', hue.toFixed(2));
+        requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    })();
+  </script>
+
+</body>
+</html>
