@@ -998,7 +998,7 @@ p {
 }
 
 .faq-item.open .faq-item__answer {
-  max-height: 400px;
+  max-height: 1200px;
 }
 
 .faq-item__answer p {
@@ -1007,6 +1007,236 @@ p {
   line-height: 26px;
   color: var(--color-text);
   opacity: 0.8;
+}
+
+.faq-item__answer ul {
+  padding: 0 0 24px 20px;
+  margin: 0;
+}
+
+.faq-item__answer ul li {
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--color-text);
+  opacity: 0.8;
+  margin-bottom: 8px;
+}
+
+/* ============================================================
+   DEPOIMENTOS — MARQUEE
+   ============================================================ */
+.section-depoimentos {
+  background: var(--color-bg-cream);
+  padding: var(--section-py) 0;
+  overflow: hidden;
+}
+
+.depoimentos__header {
+  text-align: center;
+  margin-bottom: 48px;
+  padding: 0 var(--container-px, 24px);
+}
+
+.depoimentos__header h2 {
+  font-family: var(--font-display);
+  font-size: 36px;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.depoimentos__header p {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  letter-spacing: 0.5px;
+}
+
+.marquee-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@keyframes marquee-left {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@keyframes marquee-right {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
+}
+
+.marquee-track {
+  overflow: hidden;
+  width: 100%;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  animation: marquee-left 30s linear infinite;
+}
+
+.marquee-track--reverse .marquee-content {
+  animation: marquee-right 30s linear infinite;
+}
+
+.marquee-track:hover .marquee-content,
+.marquee-track--reverse:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+.depo-card {
+  flex-shrink: 0;
+  width: 300px;
+  background: var(--color-white, #fff);
+  border: 1px solid rgba(90, 81, 67, 0.1);
+  border-radius: 16px;
+  padding: 20px;
+  cursor: default;
+  transition: box-shadow 0.2s ease;
+}
+
+.depo-card:hover {
+  box-shadow: 0 4px 20px rgba(90, 81, 67, 0.1);
+}
+
+.depo-card__top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.depo-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--color-green-mid, #5FA573);
+  color: #fff;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.depo-name {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-text);
+  display: block;
+}
+
+.depo-stars {
+  color: #F5A623;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.depo-card blockquote {
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--color-text);
+  opacity: 0.75;
+  margin: 0;
+}
+
+.marquee-fade {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 120px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.marquee-fade--left {
+  left: 0;
+  background: linear-gradient(to right, var(--color-bg-cream) 0%, transparent 100%);
+}
+
+.marquee-fade--right {
+  right: 0;
+  background: linear-gradient(to left, var(--color-bg-cream) 0%, transparent 100%);
+}
+
+/* ============================================================
+   COMO CHEGAR
+   ============================================================ */
+.section-como-chegar {
+  background: var(--color-bg-dark);
+  padding: var(--section-py) 0;
+}
+
+.section-como-chegar__header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.section-como-chegar__header h2 {
+  font-family: var(--font-display);
+  font-size: 40px;
+  color: var(--color-white);
+  margin-bottom: 10px;
+}
+
+.section-como-chegar__header p {
+  font-size: 15px;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 0.3px;
+}
+
+.como-chegar__steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.chegar-step {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.chegar-step__img {
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 3/4;
+}
+
+.chegar-step__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--t-slow) var(--ease-out);
+}
+
+.chegar-step:hover .chegar-step__img img {
+  transform: scale(1.04);
+}
+
+.chegar-step__num {
+  font-family: var(--font-display);
+  font-size: 48px;
+  color: var(--color-green-mid, #5FA573);
+  line-height: 1;
+}
+
+.chegar-step__desc {
+  font-size: 15px;
+  line-height: 24px;
+  color: rgba(255,255,255,0.65);
+}
+
+.chegar-step__desc strong {
+  color: var(--color-white);
+  font-weight: 600;
 }
 
 /* ============================================================
@@ -1024,7 +1254,8 @@ p {
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 320px 320px;
   gap: 12px;
   margin-top: 40px;
 }
@@ -1035,33 +1266,13 @@ p {
   background: var(--color-bg-sage);
 }
 
-.gallery-item:nth-child(1),
-.gallery-item:nth-child(5) {
-  height: 300px;
-}
-
-.gallery-item:nth-child(2),
-.gallery-item:nth-child(4) {
-  height: 260px;
-  align-self: center;
-}
-
-.gallery-item:nth-child(3) {
-  height: 220px;
-  align-self: end;
-}
-
-.gallery-item:nth-child(6) {
-  grid-column: span 2;
-  height: 280px;
-}
-
 .gallery-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform var(--t-slow) var(--ease-out);
 }
+
 .gallery-item:hover img {
   transform: scale(1.04);
 }
@@ -1096,6 +1307,31 @@ p {
   color: var(--color-white);
   max-width: 900px;
   margin: 0 auto;
+}
+
+.section-manifesto blockquote {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-manifesto blockquote p {
+  font-family: var(--font-display);
+  font-size: 32px;
+  line-height: 44px;
+  letter-spacing: -0.8px;
+  color: var(--color-white);
+  font-style: italic;
+  margin: 0 0 24px;
+}
+
+.section-manifesto blockquote cite {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-style: normal;
+  color: var(--color-green-mid, #5FA573);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 /* ============================================================
@@ -1323,7 +1559,6 @@ p {
   .footer__top { grid-template-columns: 1fr 1fr; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
-  .gallery-item:nth-child(6) { grid-column: span 1; }
 }
 
 /* Hamburger — oculto no desktop */
@@ -1398,7 +1633,7 @@ p {
   .hero__badge { font-size: 13px; margin-top: 24px; text-align: left; }
 
   /* ── Diferenciais ── */
-  .section-diferenciais { text-align: left; }
+  .section-diferenciais { text-align: left; padding-top: 48px; }
   .section-diferenciais__header { margin-bottom: 40px; text-align: left; }
   .section-diferenciais__subtitle { margin: 12px 0 0; }
 
@@ -1431,9 +1666,12 @@ p {
   .bento-card--large { grid-column: span 1; }
   .bento-card       { padding: 28px 24px; }
 
+  /* ── Como chegar ── */
+  .como-chegar__steps { grid-template-columns: 1fr; gap: 40px; }
+  .section-como-chegar__header h2 { font-size: 28px; }
+
   /* ── Galeria ── */
-  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
-  .gallery-item { height: 150px !important; grid-column: span 1 !important; align-self: auto !important; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-template-rows: 200px 200px; }
 
   /* ── Depoimentos ── */
   .depoimentos__quote { font-size: 20px; line-height: 28px; }
@@ -1441,10 +1679,13 @@ p {
   /* ── Stats ── */
   .stats-grid     { grid-template-columns: repeat(2, 1fr); gap: 24px; }
   .stat-item__value { font-size: 48px; }
+  .section-numeros { padding-bottom: 32px; }
 
   /* ── Manifesto ── */
   .section-manifesto   { text-align: left; }
   .section-manifesto p { font-size: 22px; line-height: 32px; text-align: left; }
+  .section-manifesto blockquote p { font-size: 22px; line-height: 32px; }
+  .section-manifesto blockquote { text-align: left; }
   .section-manifesto__icon { justify-content: flex-start; }
 
   /* ── FAQ ── */
@@ -1463,6 +1704,11 @@ p {
   /* ── Footer ── */
   .footer__top    { grid-template-columns: 1fr; gap: 32px; }
   .footer__bottom { flex-direction: column; gap: 16px; text-align: center; }
+
+  /* ── Depoimentos ── */
+  .depo-card { width: 260px; }
+  .depoimentos__header h2 { font-size: 26px; }
+  .marquee-fade { width: 48px; }
 }
 
 @media (max-width: 374px) {
